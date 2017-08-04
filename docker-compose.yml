@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    image: "xx6412223/cg-webapp-with-redis-test"
+    ports:
+     - "5000:5000"
+    restart: always
+    volumes:
+     - .:/app
+  redis:
+    image: "redis:alpine"
