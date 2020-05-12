@@ -9,5 +9,5 @@ def positive_results_query():
 
     return get_mac().__str__()
 
-print(os.environ['PORT'])
-APP.run(host='0.0.0.0', port=int(os.environ['PORT']),debug=True)
+
+APP.run(host='0.0.0.0', port=5000,debug=True)
